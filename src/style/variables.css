@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --fontMain: "Josefin Sans";
+
+  --brightBlue: hsl(220, 98%, 61%);
+  --checkBackground: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+  --veryDarkBlue: hsl(235, 21%, 11%);
+  --veryDarkDesaturatedBlue: hsl(235, 24%, 19%);
+  --lightGrayishBlue: hsl(234, 39%, 85%);
+  --lightGrayishBlueHover: hsl(236, 33%, 92%);
+  --darkGrayishBlue: hsl(234, 11%, 52%);
+  --veryDarkGrayishBlue_Primary: hsl(233, 14%, 35%);
+  --veryDarkGrayishBlue_Secondary: hsl(237, 14%, 26%);
+}
