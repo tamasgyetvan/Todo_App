@@ -1,3 +1,2 @@
-.title {
-  color: red;
-}
+@import "./style/reset.css";
+@import "./style/variables.css";

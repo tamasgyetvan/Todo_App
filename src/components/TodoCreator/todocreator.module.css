@@ -1,0 +1,7 @@
+.todoInput {
+  width: 500px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  text-indent: 10px;
+}

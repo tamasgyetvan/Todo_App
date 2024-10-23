@@ -1,8 +1,17 @@
-import "./style/reset.css";
+import "./App.module.css";
 
-import styles from "./App.module.css";
+import { Header } from "./components/Header/Header";
+import { TodoCreator } from "./components/TodoCreator/TodoCreator";
+import { Wrapper } from "./components/Wrapper/Wrapper";
 function App() {
-  return <h1 className={styles.title}>Initial Commit</h1>;
+  return (
+    <>
+      <Wrapper>
+        <Header />
+        <TodoCreator />
+      </Wrapper>
+    </>
+  );
 }
 
 export default App;
