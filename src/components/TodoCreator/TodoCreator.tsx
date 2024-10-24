@@ -1,5 +1,6 @@
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import styles from "./todocreator.module.css";
+import { useTodoStore } from "../../store";
 
 export function TodoCreator() {
   const {
@@ -8,7 +9,9 @@ export function TodoCreator() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit: SubmitHandler<FieldValues> = (data) => console.log(data);
+  const createTodo = useTodoStore((state) => state.createTodo);
+  const onSubmit: SubmitHandler<FieldValues> = (data) =>
+    createTodo(data.todoTitle);
   return (
     <>
       <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>

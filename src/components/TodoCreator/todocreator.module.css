@@ -3,7 +3,7 @@ form {
   flex-direction: column;
 }
 
-input {
+.todoInput {
   width: 500px;
   height: 45px;
   border: none;
@@ -13,12 +13,8 @@ input {
   color: white;
 }
 
-input:focus {
+.todoInput:focus {
   outline: none;
-}
-
-input:invalid {
-  background-color: red;
 }
 
 .errorMessage {
@@ -27,6 +23,6 @@ input:invalid {
   color: #ec5353;
 }
 
-input:invalid {
+.todoInput:invalid {
   border: 1px solid #ec5353;
 }

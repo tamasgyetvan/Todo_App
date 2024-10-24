@@ -1,20 +1,38 @@
 import {create} from "zustand";
 
+import {v4 as uuidv4} from "uuid"
+
+
+const id = uuidv4()
+console.log(id)
 
 export type Todo = {
-    id: number,
+    id: string,
     title: string,
     isComplete: boolean,
 }
 
+
 type TodoStore = {
-    todoList : Array<Todo>
+    todoList : Todo[]
+    createTodo: (title: string) => void;
+    deleteTodo: () => void;
 }
 
-
-export const useTodoStore = create<TodoStore>(() => ({
+//set function is used to update the state
+export const useTodoStore = create<TodoStore>((set) => ({
     todoList: [
-        {id: 1, title: "Initial todo...", isComplete: true},
-        {id: 2, title: "Gardening", isComplete: false},
-        {id: 3, title: "Something", isComplete: false}]
+        ],
+        createTodo: (title: string) => {
+           set((state) => ({
+            todoList: [...state.todoList,
+            {
+                id: id,
+                title: title,
+                isComplete: false
+
+            }]
+           }))
+        },
+        deleteTodo: () => {}
 }))
