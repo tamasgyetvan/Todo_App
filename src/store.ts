@@ -1,7 +1,7 @@
 import {create} from "zustand";
 
 
-type Todo = {
+export type Todo = {
     id: number,
     title: string,
     isComplete: boolean,
