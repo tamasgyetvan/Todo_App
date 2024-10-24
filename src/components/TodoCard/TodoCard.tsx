@@ -6,10 +6,18 @@ type TodoCardProps = {
 
 export function TodoCard({ todo }: TodoCardProps) {
   const deleteTodo = useTodoStore((state) => state.deleteTodo);
+  const updateTodo = useTodoStore((state) => state.updateTodoStatus);
 
   return (
     <div className={styles.card}>
-      <input type="checkbox" id="" checked={todo.isComplete} />
+      <input
+        type="checkbox"
+        id=""
+        checked={todo.isComplete}
+        onChange={() => {
+          updateTodo(todo.id);
+        }}
+      />
       <h2 className={styles.title}>{todo.title}</h2>
       <button
         onClick={() => {

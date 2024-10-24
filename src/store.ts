@@ -13,13 +13,13 @@ type TodoStore = {
     todoList : Todo[]
     createTodo: (title: string) => void;
     deleteTodo: (id: string) => void;
+    updateTodoStatus: (id: string) => void;
 }
 
 //set function is used to update the state
 export const useTodoStore = create<TodoStore>((set) => ({
-    todoList: [
-        ],
-        createTodo: (title: string) => {
+    todoList: [],
+    createTodo: (title: string) => {
            set((state) => ({
             todoList: [...state.todoList,
             {
@@ -33,6 +33,16 @@ export const useTodoStore = create<TodoStore>((set) => ({
         deleteTodo: (id: string) => {
             set((state) => ({
                 todoList: state.todoList.filter((todo) => todo.id != id)
+            }))
+        },
+
+        updateTodoStatus: (id: string) => {
+
+            
+
+            set((state) => ({
+                todoList: state.todoList.map((todo: Todo) => todo.id === id ? {...todo, isComplete: !todo.isComplete} : todo )
+                
             }))
         }
 }))
