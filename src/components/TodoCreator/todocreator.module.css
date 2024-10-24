@@ -1,4 +1,9 @@
-.todoInput {
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
   width: 500px;
   height: 45px;
   border: none;
@@ -6,4 +11,22 @@
   text-indent: 10px;
   background-color: var(--veryDarkDesaturatedBlue);
   color: white;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:invalid {
+  background-color: red;
+}
+
+.errorMessage {
+  padding: 5px 0px 0px 10px;
+  font-weight: 700;
+  color: #ec5353;
+}
+
+input:invalid {
+  border: 1px solid #ec5353;
 }
