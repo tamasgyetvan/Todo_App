@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 460px;
+  padding: 20px;
+  background-color: var(--veryDarkDesaturatedBlue);
+  border-bottom: 0.1px solid var(--darkGrayishBlue);
+  color: var(--lightGrayishBlue);
+}
+
+.card .closeButton {
+  visibility: hidden;
+}
+
+.card:hover .closeButton {
+  margin-left: auto;
+  visibility: visible;
+}
+
+.card:nth-child(1) {
+  border-top-right-radius: 5px;
+}
+.title {
+  font-size: 1.8rem;
+}

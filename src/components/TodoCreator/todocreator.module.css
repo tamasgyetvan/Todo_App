@@ -4,4 +4,6 @@
   border: none;
   border-radius: 5px;
   text-indent: 10px;
+  background-color: var(--veryDarkDesaturatedBlue);
+  color: white;
 }

@@ -1,2 +1,6 @@
 @import "./style/reset.css";
 @import "./style/variables.css";
+
+body {
+  background-color: var(--veryDarkBlue);
+}
