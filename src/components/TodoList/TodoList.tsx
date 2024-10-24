@@ -7,7 +7,7 @@ export function TodoList() {
   return (
     <section className={styles.container}>
       {todoList.map((todo) => (
-        <TodoCard todo={todo} />
+        <TodoCard key={todo.id} todo={todo} />
       ))}
     </section>
   );

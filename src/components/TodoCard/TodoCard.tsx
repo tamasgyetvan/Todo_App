@@ -1,15 +1,23 @@
-import { Todo } from "../../store";
+import { Todo, useTodoStore } from "../../store";
 import styles from "./todocard.module.css";
 type TodoCardProps = {
   todo: Todo;
 };
 
 export function TodoCard({ todo }: TodoCardProps) {
+  const deleteTodo = useTodoStore((state) => state.deleteTodo);
+
   return (
     <div className={styles.card}>
       <input type="checkbox" id="" checked={todo.isComplete} />
       <h2 className={styles.title}>{todo.title}</h2>
-      <button className={styles.closeButton} type="button">
+      <button
+        onClick={() => {
+          deleteTodo(todo.id);
+        }}
+        className={styles.closeButton}
+        type="button"
+      >
         <img src="/icon-cross.svg" alt="" />
       </button>
     </div>

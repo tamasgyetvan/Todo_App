@@ -2,10 +2,6 @@ import {create} from "zustand";
 
 import {v4 as uuidv4} from "uuid"
 
-
-const id = uuidv4()
-console.log(id)
-
 export type Todo = {
     id: string,
     title: string,
@@ -16,7 +12,7 @@ export type Todo = {
 type TodoStore = {
     todoList : Todo[]
     createTodo: (title: string) => void;
-    deleteTodo: () => void;
+    deleteTodo: (id: string) => void;
 }
 
 //set function is used to update the state
@@ -27,12 +23,16 @@ export const useTodoStore = create<TodoStore>((set) => ({
            set((state) => ({
             todoList: [...state.todoList,
             {
-                id: id,
+                id: uuidv4(),
                 title: title,
                 isComplete: false
 
             }]
            }))
         },
-        deleteTodo: () => {}
+        deleteTodo: (id: string) => {
+            set((state) => ({
+                todoList: state.todoList.filter((todo) => todo.id != id)
+            }))
+        }
 }))
