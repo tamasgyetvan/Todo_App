@@ -20,6 +20,7 @@
 
 .card:nth-child(1) {
   border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 .title {
   font-size: 1.8rem;

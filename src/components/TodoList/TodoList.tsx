@@ -1,14 +1,42 @@
-import { useTodoStore } from "../../store";
+import { Todo } from "../../store";
 import { TodoCard } from "../TodoCard/TodoCard";
 import styles from "./todolist.module.css";
-export function TodoList() {
-  const todoList = useTodoStore((state) => state.todoList);
 
-  return (
-    <section className={styles.container}>
-      {todoList.map((todo) => (
-        <TodoCard key={todo.id} todo={todo} />
-      ))}
-    </section>
-  );
+type TodoListProps = {
+  todoList: Todo[];
+  filter: string | null;
+};
+export function TodoList({ todoList, filter }: TodoListProps) {
+  if (filter === "completeOnly") {
+    return (
+      <section className={styles.container}>
+        {todoList.map((todo: Todo) =>
+          todo.isComplete == true ? (
+            <TodoCard key={todo.id} todo={todo} />
+          ) : null
+        )}
+      </section>
+    );
+  }
+  if (filter === "all") {
+    return (
+      <section className={styles.container}>
+        {todoList.map((todo: Todo) => (
+          <TodoCard key={todo.id} todo={todo} />
+        ))}
+      </section>
+    );
+  }
+
+  if (filter === "activeOnly") {
+    return (
+      <section className={styles.container}>
+        {todoList.map((todo: Todo) =>
+          todo.isComplete == true ? null : (
+            <TodoCard key={todo.id} todo={todo} />
+          )
+        )}
+      </section>
+    );
+  }
 }
