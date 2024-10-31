@@ -9,3 +9,11 @@
   position: relative;
   bottom: 25px;
 }
+
+@media screen and (max-width: 650px) {
+  .container {
+    width: auto;
+    align-items: stretch;
+    padding-inline: 20px;
+  }
+}

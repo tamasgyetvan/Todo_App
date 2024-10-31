@@ -4,7 +4,7 @@ form {
 }
 
 .todoInput {
-  width: 500px;
+  width: 600px;
   height: 66px;
   border: none;
   border-radius: 5px;
@@ -22,4 +22,10 @@ form {
   padding: 5px 0px 0px 10px;
   font-weight: 700;
   color: #ec5353;
+}
+
+@media screen and (max-width: 650px) {
+  .todoInput {
+    width: auto;
+  }
 }

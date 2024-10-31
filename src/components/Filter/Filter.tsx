@@ -15,7 +15,7 @@ export function Filter({ handleClick, currentFilter }: FilterProps) {
   return (
     <section className={styles.filter}>
       <p>{activeItems.length} items left</p>
-      <div>
+      <div className={styles.container}>
         {options.map((option) => (
           <button
             type="button"

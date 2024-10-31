@@ -8,3 +8,10 @@
   background-image: var(--backgroundImage);
   background-size: cover;
 }
+
+@media screen and (max-width: 650px) {
+  .wrapper {
+    align-items: stretch;
+    padding: 50px 20px;
+  }
+}

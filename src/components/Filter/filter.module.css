@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  width: 500px;
+  width: 600px;
   font-size: 1.2rem;
   position: relative;
   bottom: 25px;
@@ -39,4 +39,25 @@
 
 .clearButton:hover {
   color: var(--buttonHover);
+}
+
+@media screen and (max-width: 650px) {
+  .filter {
+    width: auto;
+    margin-inline: 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: -70px;
+    transition: all 0.2s ease-in;
+    background-color: var(--componentColor);
+    border-radius: 5px;
+    right: 0;
+  }
 }
