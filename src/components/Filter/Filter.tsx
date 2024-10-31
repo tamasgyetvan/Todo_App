@@ -14,7 +14,16 @@ export function Filter({ handleClick, currentFilter }: FilterProps) {
   );
   return (
     <section className={styles.filter}>
-      <p>{activeItems.length} items left</p>
+      <div>
+        <p>{activeItems.length} items left</p>
+        <button
+          type="button"
+          className={styles.clearButton}
+          onClick={clearCompletedTodos}
+        >
+          Clear completed
+        </button>
+      </div>
       <div className={styles.container}>
         {options.map((option) => (
           <button
@@ -32,13 +41,6 @@ export function Filter({ handleClick, currentFilter }: FilterProps) {
           </button>
         ))}
       </div>
-      <button
-        type="button"
-        className={styles.clearButton}
-        onClick={clearCompletedTodos}
-      >
-        Clear completed
-      </button>
     </section>
   );
 }
