@@ -8,7 +8,9 @@ export function Filter({ handleClick, currentFilter }: FilterProps) {
   const options = ["all", "active", "completed"];
   const todoList = useTodoStore((state) => state.todoList);
   const activeItems = todoList.filter((todo) => todo.isComplete != true);
-
+  const clearCompletedTodos = useTodoStore(
+    (state) => state.clearCompletedTodos
+  );
   return (
     <section className={styles.filter}>
       <p>{activeItems.length} items left</p>
@@ -28,7 +30,11 @@ export function Filter({ handleClick, currentFilter }: FilterProps) {
           </button>
         ))}
       </div>
-      <button type="button" className={styles.clearButton}>
+      <button
+        type="button"
+        className={styles.clearButton}
+        onClick={clearCompletedTodos}
+      >
         Clear completed
       </button>
     </section>
