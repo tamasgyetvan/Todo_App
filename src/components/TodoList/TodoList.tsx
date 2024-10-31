@@ -7,7 +7,7 @@ type TodoListProps = {
   filter: string | null;
 };
 export function TodoList({ todoList, filter }: TodoListProps) {
-  if (filter === "completeOnly") {
+  if (filter === "completed") {
     return (
       <section className={styles.container}>
         {todoList.map((todo: Todo) =>
@@ -28,7 +28,7 @@ export function TodoList({ todoList, filter }: TodoListProps) {
     );
   }
 
-  if (filter === "activeOnly") {
+  if (filter === "active") {
     return (
       <section className={styles.container}>
         {todoList.map((todo: Todo) =>
