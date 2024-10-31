@@ -26,7 +26,7 @@ export function TodoCard({ todo }: TodoCardProps) {
         className={styles.closeButton}
         type="button"
       >
-        <img src="/icon-cross.svg" alt="" />
+        <img src="./icon-cross.svg" alt="" />
       </button>
     </div>
   );

@@ -24,7 +24,7 @@
   --componentColor: hsl(235, 24%, 19%);
   --fontColor: hsl(234, 39%, 85%);
   --secondaryFontColor: hsl(236, 9%, 61%);
-  --backgroundImage: url("/bg-desktop-dark.jpg");
+  --backgroundImage: url("./bg-desktop-dark.jpg");
   --borderColor: hsl(233, 14%, 35%);
 }
 
@@ -33,6 +33,6 @@
   --backgroundColor: hsl(236, 33%, 92%);
   --componentColor: hsl(0, 0%, 98%);
   --fontColor: hsl(235, 19%, 35%);
-  --backgroundImage: url("/bg-desktop-light.jpg");
+  --backgroundImage: url("./bg-desktop-light.jpg");
   --borderColor: hsl(236, 9%, 61%);
 }
