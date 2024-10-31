@@ -1,5 +1,6 @@
 import { useTodoStore } from "../../store";
 import styles from "./filter.module.css";
+import { v4 as uuid } from "uuid";
 type FilterProps = {
   handleClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
   currentFilter: string | null;
@@ -25,6 +26,7 @@ export function Filter({ handleClick, currentFilter }: FilterProps) {
             }
             data-filter={option}
             onClick={handleClick}
+            key={uuid()}
           >
             {option}
           </button>
