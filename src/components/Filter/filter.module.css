@@ -33,6 +33,13 @@
   }
 }
 
+.filterButtonActive {
+  color: var(--brightBlue);
+  font-weight: 700;
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
 .clearButton:hover {
   color: white;
 }

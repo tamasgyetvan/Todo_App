@@ -23,7 +23,7 @@ function App() {
         <TodoCreator />
       </Wrapper>
       <TodoList todoList={todoList} filter={filter} />
-      <Filter handleClick={handleFilterChange} />
+      <Filter handleClick={handleFilterChange} currentFilter={filter} />
     </>
   );
 }
