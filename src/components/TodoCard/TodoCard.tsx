@@ -10,14 +10,14 @@ export function TodoCard({ todo }: TodoCardProps) {
 
   return (
     <div className={styles.card}>
-      <input
-        type="checkbox"
+      <button
+        type="button"
         id=""
-        checked={todo.isComplete}
-        onChange={() => {
+        className={todo.isComplete ? styles.complete : styles.active}
+        onClick={() => {
           updateTodo(todo.id);
         }}
-      />
+      ></button>
       <h2 className={styles.title}>{todo.title}</h2>
       <button
         onClick={() => {

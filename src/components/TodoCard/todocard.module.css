@@ -24,4 +24,24 @@
 }
 .title {
   font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.complete,
+.active {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+}
+.complete {
+  background-image: var(--checkBackground);
+
+  &::before {
+    content: url("../../../public/icon-check.svg");
+  }
+}
+
+.active {
+  background-image: none;
+  border: 1px solid var(--darkGrayishBlue);
 }

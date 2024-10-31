@@ -3,7 +3,22 @@
   --fontMain: "Josefin Sans";
 
   --brightBlue: hsl(220, 98%, 61%);
-  --checkBackground: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+  --checkBackground: linear-gradient(
+    135deg,
+    hsl(192deg 100% 67%) 0%,
+    hsl(199deg 99% 67%) 8%,
+    hsl(207deg 98% 67%) 17%,
+    hsl(214deg 96% 66%) 25%,
+    hsl(221deg 95% 66%) 33%,
+    hsl(229deg 94% 66%) 42%,
+    hsl(236deg 93% 66%) 50%,
+    hsl(244deg 92% 66%) 58%,
+    hsl(251deg 91% 66%) 67%,
+    hsl(258deg 90% 65%) 75%,
+    hsl(266deg 89% 65%) 83%,
+    hsl(273deg 88% 65%) 92%,
+    hsl(280deg 87% 65%) 100%
+  );
   --veryDarkBlue: hsl(235, 21%, 11%);
   --veryDarkDesaturatedBlue: hsl(235, 24%, 19%);
   --lightGrayishBlue: hsl(234, 39%, 85%);
@@ -11,4 +26,5 @@
   --darkGrayishBlue: hsl(234, 11%, 52%);
   --veryDarkGrayishBlue_Primary: hsl(233, 14%, 35%);
   --veryDarkGrayishBlue_Secondary: hsl(237, 14%, 26%);
+  --va: linear-gradient();
 }
