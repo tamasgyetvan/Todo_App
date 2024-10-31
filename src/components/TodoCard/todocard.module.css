@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  width: 460px;
+  width: 500px;
   padding: 20px;
   background-color: var(--veryDarkDesaturatedBlue);
   border-bottom: 0.1px solid var(--darkGrayishBlue);

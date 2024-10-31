@@ -5,12 +5,6 @@ header {
 }
 
 h1 {
-  font-family: var(--fontMain);
   font-size: 4.8rem;
   color: white;
-}
-
-button {
-  background: none;
-  border: none;
 }

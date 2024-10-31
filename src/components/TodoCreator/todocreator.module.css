@@ -5,7 +5,7 @@ form {
 
 .todoInput {
   width: 500px;
-  height: 45px;
+  height: 66px;
   border: none;
   border-radius: 5px;
   text-indent: 10px;
@@ -21,8 +21,4 @@ form {
   padding: 5px 0px 0px 10px;
   font-weight: 700;
   color: #ec5353;
-}
-
-.todoInput:invalid {
-  border: 1px solid #ec5353;
 }

@@ -2,44 +2,40 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: red;
   margin: 0 auto;
   width: 500px;
   font-size: 1.2rem;
   position: relative;
   bottom: 25px;
   padding: 10px 20px;
-  box-sizing: border-box;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   background-color: var(--veryDarkDesaturatedBlue);
-  color: var(--darkGrayishBlue);
 }
 
 .filter > * {
   color: var(--darkGrayishBlue);
 }
 
-.filterButton {
+.filterButton,
+.filterButtonActive {
   font-weight: 700;
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+.filterButton {
   color: var(--darkGrayishBlue);
 
   &:hover {
     color: white;
   }
-
-  &::first-letter {
-    text-transform: capitalize;
-  }
 }
 
 .filterButtonActive {
   color: var(--brightBlue);
-  font-weight: 700;
-  &::first-letter {
-    text-transform: capitalize;
-  }
 }
+
 .clearButton:hover {
   color: white;
 }
