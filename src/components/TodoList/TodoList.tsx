@@ -1,12 +1,13 @@
 import { Todo } from "../../store";
 import { TodoCard } from "../TodoCard/TodoCard";
 import styles from "./todolist.module.css";
+import { useTodoStore } from "../../store";
 
 type TodoListProps = {
-  todoList: Todo[];
   filter: string | null;
 };
-export function TodoList({ todoList, filter }: TodoListProps) {
+export function TodoList({ filter }: TodoListProps) {
+  const todoList = useTodoStore((state) => state.todoList);
   if (filter === "completed") {
     return (
       <section className={styles.container}>
