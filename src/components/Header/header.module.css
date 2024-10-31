@@ -2,6 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 500px;
+  transition: all 0.2s ease-in;
 }
 
 h1 {

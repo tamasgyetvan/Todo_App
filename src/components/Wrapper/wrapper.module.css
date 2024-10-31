@@ -4,6 +4,7 @@
   align-items: center;
   gap: 50px;
   padding: 50px;
-  background: var(--backgroundImage);
+  transition: background-image 0.2s ease-in-out;
+  background-image: var(--backgroundImage);
   background-size: cover;
 }

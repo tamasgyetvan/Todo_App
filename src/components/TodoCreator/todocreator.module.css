@@ -9,6 +9,7 @@ form {
   border: none;
   border-radius: 5px;
   text-indent: 10px;
+  transition: all 0.2s ease-in;
   background-color: var(--componentColor);
   color: var(--secondaryFontColor);
 }
