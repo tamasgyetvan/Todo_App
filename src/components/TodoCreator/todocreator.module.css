@@ -9,8 +9,8 @@ form {
   border: none;
   border-radius: 5px;
   text-indent: 10px;
-  background-color: var(--veryDarkDesaturatedBlue);
-  color: white;
+  background-color: var(--componentColor);
+  color: var(--secondaryFontColor);
 }
 
 .todoInput:focus {

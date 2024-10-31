@@ -6,8 +6,9 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: var(--veryDarkBlue);
+.app {
+  background-color: var(--backgroundColor);
+  height: 100vh;
 }
 
 button {

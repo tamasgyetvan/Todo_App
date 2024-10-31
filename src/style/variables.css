@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
 :root {
   --fontMain: "Josefin Sans";
-
-  --brightBlue: hsl(220, 98%, 61%);
   --checkBackground: linear-gradient(
     135deg,
     hsl(192deg 100% 67%) 0%,
@@ -19,12 +18,21 @@
     hsl(273deg 88% 65%) 92%,
     hsl(280deg 87% 65%) 100%
   );
-  --veryDarkBlue: hsl(235, 21%, 11%);
-  --veryDarkDesaturatedBlue: hsl(235, 24%, 19%);
-  --lightGrayishBlue: hsl(234, 39%, 85%);
-  --lightGrayishBlueHover: hsl(236, 33%, 92%);
-  --darkGrayishBlue: hsl(234, 11%, 52%);
-  --veryDarkGrayishBlue_Primary: hsl(233, 14%, 35%);
-  --veryDarkGrayishBlue_Secondary: hsl(237, 14%, 26%);
-  --va: linear-gradient();
+  --buttonActive: hsl(220, 98%, 61%);
+  --buttonHover: hsl(236, 33%, 92%);
+  --backgroundColor: hsl(235, 21%, 11%);
+  --componentColor: hsl(235, 24%, 19%);
+  --fontColor: hsl(234, 39%, 85%);
+  --secondaryFontColor: hsl(236, 9%, 61%);
+  --backgroundImage: url("/bg-desktop-dark.jpg");
+  --borderColor: hsl(233, 14%, 35%);
+}
+
+[data-theme="light"] {
+  --buttonHover: hsl(235, 19%, 35%);
+  --backgroundColor: hsl(236, 33%, 92%);
+  --componentColor: hsl(0, 0%, 98%);
+  --fontColor: hsl(235, 19%, 35%);
+  --backgroundImage: url("/bg-desktop-light.jpg");
+  --borderColor: hsl(236, 9%, 61%);
 }

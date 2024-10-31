@@ -10,11 +10,11 @@
   padding: 10px 20px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  background-color: var(--veryDarkDesaturatedBlue);
+  background-color: var(--componentColor);
 }
 
 .filter > * {
-  color: var(--darkGrayishBlue);
+  color: var(--secondaryFontColor);
 }
 
 .filterButton,
@@ -25,17 +25,17 @@
   }
 }
 .filterButton {
-  color: var(--darkGrayishBlue);
+  color: var(--secondaryFontColor);
 
   &:hover {
-    color: white;
+    color: var(--buttonHover);
   }
 }
 
 .filterButtonActive {
-  color: var(--brightBlue);
+  color: var(--buttonActive);
 }
 
 .clearButton:hover {
-  color: white;
+  color: var(--buttonHover);
 }

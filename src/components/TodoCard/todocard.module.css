@@ -4,9 +4,9 @@
   gap: 20px;
   width: 500px;
   padding: 20px;
-  background-color: var(--veryDarkDesaturatedBlue);
-  border-bottom: 0.1px solid var(--darkGrayishBlue);
-  color: var(--lightGrayishBlue);
+  background-color: var(--componentColor);
+  border-bottom: 0.1px solid var(--borderColor);
+  color: var(--fontColor);
 }
 
 .card .closeButton {
@@ -43,5 +43,5 @@
 
 .active {
   background-image: none;
-  border: 1px solid var(--darkGrayishBlue);
+  border: 0.1px solid var(--borderColor);
 }
