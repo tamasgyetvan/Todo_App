@@ -13,5 +13,26 @@
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   background-color: var(--veryDarkDesaturatedBlue);
-  color: var(--lightGrayishBlue);
+  color: var(--darkGrayishBlue);
+}
+
+.filter > * {
+  color: var(--darkGrayishBlue);
+}
+
+.filterButton {
+  font-weight: 700;
+  color: var(--darkGrayishBlue);
+
+  &:hover {
+    color: white;
+  }
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+.clearButton:hover {
+  color: white;
 }

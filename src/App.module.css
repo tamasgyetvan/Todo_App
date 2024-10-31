@@ -1,6 +1,10 @@
 @import "./style/reset.css";
 @import "./style/variables.css";
 
+* {
+  font-family: "Josefin Sans";
+}
+
 body {
   background-color: var(--veryDarkBlue);
 }
